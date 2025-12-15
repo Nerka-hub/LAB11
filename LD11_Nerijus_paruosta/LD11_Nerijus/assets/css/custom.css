@@ -1,0 +1,59 @@
+/* ===== 11 LAB: Formos stiliai ===== */
+.field-error{
+  display:block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #dc3545;
+  min-height: 1.2em;
+}
+.form-result .result-card{
+  background: #ffffff;
+  border: 2px solid rgba(67, 97, 238, 0.2);
+  border-left: 6px solid #f72585;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+.rating-value{
+  font-weight: 700;
+  font-family: 'Fira Code', monospace;
+}
+.popup-message{
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  z-index: 2000;
+  background: linear-gradient(135deg, rgba(76, 201, 240, 0.95), rgba(67, 97, 238, 0.95));
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.popup-message.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+.is-invalid{ border-color: #dc3545 !important; }
+.is-valid{ border-color: #198754 !important; }
+
+.contact-card-fixed {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-desc {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.contact-value {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
